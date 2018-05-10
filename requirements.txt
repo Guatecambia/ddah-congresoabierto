@@ -1,24 +1,51 @@
 Django==1.8
-gunicorn==18.0
+Markdown==2.6.6
+Pygments==2.1.3
+amqp==1.4.9
+anyjson==0.3.3
+argparse==1.2.1
+backports.shutil-get-terminal-size==1.0.0
+billiard==3.3.0.23
+bunch==1.0.1
+celery==3.1.23
+-e git://github.com/ciudadanointeligente/ddah-promises.git@48961a3bf039f9a27bbd070b07889fccb3c1fb03#egg=ddah_promises-dev
+decorator==4.0.10
 dj-database-url==0.2.2
 dj-static==0.0.6
-psycopg2==2.5.2
--e git://github.com/django-nose/django-nose#egg=django-nose
-django-extensions
-ipython
--e git+https://github.com/ciudadanointeligente/django-popolo.git#egg=django-popolo
--e git://github.com/jezdez/django-constance.git#egg=django-constance-updated
-markdown
-newrelic
-django-subdomain-instances
-django-taggit
--e git://github.com/ciudadanointeligente/ddah-promises.git#egg=ddah-promises
--e git://github.com/bradleyayers/django-ace.git#egg=django-ace
-bunch==1.0.1
-json-utils==0.2
-Pystache==0.5.4
-django-picklefield==0.3.1
+-e git://github.com/bradleyayers/django-ace.git@74a9cd9d510c1629b5f4d2e477ac43b61b51a4d4#egg=django_ace-dev
 django-admin-sortable2==0.5.0
-celery
+django-autoslug==1.9.3
+-e git://github.com/jezdez/django-constance.git@2665fbdf9c8b18ae9b39d4a0ce6bce9c5dde66a8#egg=django_constance-dev
+django-extensions==1.7.3
 django-forms-bootstrap==3.0.1
+django-model-utils==2.5.2
+-e git://github.com/django-nose/django-nose@3b9dad77d0440cace471aa43d77a4ba619f145bb#egg=django_nose-dev
+django-picklefield==0.3.1
+-e git+https://github.com/ciudadanointeligente/django-popolo.git@3a34d5cb27cf3c7a3d62c947606da47a96c6647c#egg=django_popolo-master
 django-social-auth==0.7.28
+django-subdomain-instances==1.0
+django-taggit==0.21.1
+gunicorn==18.0
+httplib2==0.9.2
+ipython==5.1.0
+ipython-genutils==0.1.0
+json-utils==0.2
+kombu==3.0.35
+newrelic==2.68.0.50
+nose==1.3.7
+oauth2==1.9.0.post1
+pathlib2==2.1.0
+pexpect==4.2.1
+pickleshare==0.7.4
+prompt-toolkit==1.0.7
+psycopg2==2.5.2
+ptyprocess==0.5.1
+pystache==0.5.4
+python-openid==2.2.5
+pytz==2016.6.1
+simplegeneric==0.8.1
+six==1.10.0
+static3==0.7.0
+traitlets==4.2.2
+wcwidth==0.1.7
+wsgiref==0.1.2
