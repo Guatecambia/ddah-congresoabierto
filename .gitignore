@@ -64,3 +64,5 @@ docs/_build/
 local_settings.py
 
 __staticfiles
+
+project_site/settings_secret.py

@@ -1,5 +1,4 @@
-"""
-Django settings for deldichoalhecho_site project.
+""" Django settings for deldichoalhecho_site project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -13,14 +12,14 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 import sys
 
+#import secret configuration
+#to setup your own, rename file settings_secret_example.py to settings_secret.py
+#and fill according to your needes
+import settings_secret.py
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','s3cret0')
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEBUG' in os.environ and os.environ.get('DEBUG') == 1
 
 TEMPLATE_DEBUG = True
 
@@ -92,15 +91,6 @@ WSGI_APPLICATION = 'project_site.wsgi.application'
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 TESTING = 'test' in sys.argv
 
-# Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -147,7 +137,6 @@ TEMPLATE_LOADERS = (
 )
 # MultiInstance Thing
 
-BASE_HOST = os.environ.get('BASE_HOST', '127.0.0.1.xip.io:8000')
 #HEROKU SPECIFICS
 # Parse database configuration from $DATABASE_URL
 if 'DATABASE_URL' in os.environ:
