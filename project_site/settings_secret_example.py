@@ -11,9 +11,9 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'labinnovacion',
-        'USER': 'lab',
-        'PASSWORD': 'laboratorio',
+        'NAME': 'dbname',
+        'USER': 'dbusername',
+        'PASSWORD': 'dbpass',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -21,5 +21,3 @@ DATABASES = {
 
 BASE_URL_FIXED = 'http://169.254.10.232:8000'
 
-#DISQUS_API_KEY = 'P0F8utRQcfKjLNxZs9U6oeI5KqnShs9xUqDRBrJgwFCK70slnPCn9GdEEO2KOpIV'
-#DISQUS_WEBSITE_SHORTNAME = 'labinnovacion'

@@ -15,7 +15,7 @@ import sys
 #import secret configuration
 #to setup your own, rename file settings_secret_example.py to settings_secret.py
 #and fill according to your needes
-import settings_secret.py
+from settings_secret import *
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
