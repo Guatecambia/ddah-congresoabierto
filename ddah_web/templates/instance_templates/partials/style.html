@@ -31,12 +31,6 @@
       }
  
       @font-face {
-        font-family: 'icomoon';
-        src:url('//deldichoalhecho.cl/static/fonts/icomoon.eot');
-        src:url('//deldichoalhecho.cl/static/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-            url('//deldichoalhecho.cl/static/fonts/icomoon.woff') format('woff'),
-            url('//deldichoalhecho.cl/static/fonts/icomoon.ttf') format('truetype'),
-            url('//deldichoalhecho.cl/static/fonts/icomoon.svg#icomoon') format('svg');
         font-weight: normal;
         font-style: normal;
       }
@@ -50,16 +44,33 @@
       }
 body {
     background-color: {{ style.background_color }};
+    font-family: 'Questrial', sans-serif;
+
 }
 #footer {
-    background-color: {{ style.background_color }};
+    background-color: #333333;
 }
 .dropdown-menu {
-  background-color: {{ style.background_color }};
+  background-color: #F5F5F5;
 }
 .progress {
-  background-color: {{ style.background_color }};
+  background-color: #E0E0E0;
 }
+.progress-bar {
+  background-color: #C40869;
+  color: #123D68;
+}
+.modal-body {
+  background-color: {{ style.background_color }};
+  color: #153F58;
+  padding:20px 40px;
+}
+.modal-header {
+  background-color: #FFFF01;
+  color: #153F58;
+  padding:15px 40px;
+}
+
 .b-color {
   background-color: {{ style.background_color }};
 }
@@ -68,6 +79,9 @@ body {
 }
 .panel {
   background-color: {{ style.second_color }};
+}
+.panel-heading, .panel-body {
+    padding:45px 50px;
 }
 .panel-default>.panel-heading {
   background-color: {{ style.second_color }};
@@ -82,4 +96,38 @@ body {
 .read-less p.text-center.category-expander {
   background-color: {{ style.read_more_color }};
 } 
+
+.category-menu li a:hover {
+  background: #E0E0E0;
+  color:#000000;
+}
+
+.category-menu li a {
+  background: #0062A3;
+  padding: 5px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.fa-chevron-down, .fa-chevron-up {
+    color: #383838;
+}
+
+ul.list {
+    margin-top:30px;
+    padding-left:0px;
+}
+
+ul.list li{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.header a{
+    color:#123D68;
+}
+.header a:hover {
+    color:#fff;
+}
+
     </style>

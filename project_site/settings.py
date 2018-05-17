@@ -218,10 +218,10 @@ DEFAULT_SOCIAL_NETWORKS={
     "og_img": "http://placehold.it/400x400"
 }
 DEFAULT_STYLE={
-    "header_img": "http://i.imgur.com/7ULzGlP.png",
-    "background_color": "#0F2356",
-    "second_color": "#0F0F28",
-    "read_more_color": "#750661"
+    "header_img": "static/images/header-img.jpg",
+    "background_color": "#FFFFFF",
+    "second_color": "#383838",
+    "read_more_color": "#FFFF01"
 }
 if TESTING:
     CELERY_ALWAYS_EAGER = True

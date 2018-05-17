@@ -9,8 +9,8 @@
     
     <div class="jumbotron">
       <div class="hero-space">
-        <img src="{{ style.header_img }}">
-        <div class="progress summary-progress" data-container="body" data-html="true" data-toggle="popover" data-placement="top" data-content="<i class='fa fa-check'></i> <strong>12</strong> promesas cumplidas</br> <i aria-hidden='true' data-icon='&#xe600;'></i> <strong>47</strong> promesas incompletas</br><i class='fa fa-times'></i> <strong>140</strong> promesas sin avance</br> Revisa la <a href='http://deldichoalhecho.cl/index.html'>metodología</a>">
+        <img src="static/images/header-img.jpg">
+        <div class="progress summary-progress" data-container="body" data-html="true" data-toggle="popover" data-placement="top" data-content="<i class='fa fa-check'></i> <strong>{{summary.accomplished}}</strong> promesas cumplidas</br> <i aria-hidden='true' data-icon='&#xe600;'></i> <strong>{{summary.in_progress}}</strong> promesas incompletas</br><i class='fa fa-times'></i> <strong>{{summary.no_progress}}</strong> promesas sin avance</br>">
         <div class="progress-bar
           " style="width: {{summary.total_progress}}%"><p>Primer Año: {{summary.formated_total_progress}}% de cumplimiento del programa</p></div>
         </div>
@@ -20,7 +20,7 @@
         )
         })
         </script>
-        <div class="container">
+        <!--div class="container">
           <div class="container">
             <h2>{{ description }}</h2>
             <div class="socialnetwork-home">
@@ -44,12 +44,12 @@
               </ul>
             </div>
           </div>
-        </div>
-      </div>
+        </div-->
+    </div>
  
       <div class="category-menu">
         <div class="container">
-          <ul class="list-inline">
+          <ul class="list">
             {{#categories}}
             <li><a href="#{{slug}}">{{name}}</a></li>
             {{/categories}}
@@ -58,7 +58,6 @@
         </div>
       </div>
     </div>
- 
     <div class="container">
       <div class="panel-group" id="categories">
         
@@ -111,9 +110,9 @@
                           {{{fulfillment.description}}}
                           <h4>Indicadores
                           </h4>
-                          <ul>
+                          <ol type="I">
                             {{#milestones}}
-                            <li><span>{{date}}</span>{{{description}}}</li>
+                            <li><!--span>{{date}}</span-->{{{description}}}</li>
                             {{/milestones}}
                           </ul>
                         </div>

@@ -1,9 +1,7 @@
 /*GENERAL*/
 
 body {
-    font-family: 'Open Sans', sans-serif;
     color: #FFF;
-    background-color: #0F2356;
     -webkit-font-smoothing: antialiased;
     text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
@@ -215,7 +213,6 @@ list-style-type: lower-roman;
 
 .progress {
   height: inherit;
-  background-color: #0F2356;
   border-radius: 0px;
   position: relative;
 }
@@ -307,7 +304,7 @@ div.verification-document.accomplished {
 }
 
 .b-color {
-  background-color: #0F2356;
+  background-color: #fff;
 }
 
 /*PROGRESSBAR LEGEND*/
